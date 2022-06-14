@@ -1,0 +1,165 @@
+ body {
+            background-color: rgb(61, 61, 61);
+            color: white;
+            font-size: 35px;
+        }
+
+        body>div {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container1 div {
+            background-color: grey;
+        }
+
+        .container1 .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 17vh;
+        }
+
+        .container1 .phonenum {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 43%;
+            height: 10vh;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            height: 10vh;
+        }
+
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            height: 25vh;
+        }
+
+        .feat {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .feat .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            margin-left: -5px;
+        }
+
+        .feat .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            margin-right: -5px;
+        }
+
+        .container2 div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex: 1;
+            height: 18vh;
+        }
+
+        .container3 div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex: 1;
+            height: 18vh;
+        }
+
+        .container4 {
+            display: flex;
+        }
+
+        .container4 .textcontent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            width: 70%;
+            margin-right: 5px;
+            height: 25vh;
+        }
+
+        .container4 .sidebar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            width: 29.3%;
+            margin-left: 5px;
+            height: 25vh;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            height: 10vh;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container1 {
+                flex-wrap: wrap;
+            }
+            .container1 .logo {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .container1 .phonenum {
+                width: 100%;
+            }
+
+            .feat {
+                flex-direction: column;
+            }
+            .feat .container2 {
+                margin-right: -5px;
+                margin-bottom: 5px;
+            }
+            .feat .container3 {
+                margin-left: -5px;
+                margin-top: 5px;
+            }
+
+            .container4 {
+               flex-direction: column;
+            }
+            .container4 .textcontent {
+                margin-right: 0px;
+                margin-bottom: 5px;
+                width: 100%
+            }
+            .container4 .sidebar {
+                margin-left: 0px;
+                margin-top: 5px;
+                width: 100%
+            }
+    
+        }
