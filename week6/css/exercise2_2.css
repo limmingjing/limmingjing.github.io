@@ -1,0 +1,36 @@
+.logo{ grid-area:LOGO; }
+.phoneno{ grid-area:PHONENO; }
+.menu{ grid-area:MENU; }
+.imageslideshow{ grid-area:IMAGESLIDESHOW; }
+.feat1{ grid-area:FEAT1; }
+.feat2{ grid-area:FEAT2; }
+.feat3{ grid-area:FEAT3; }
+.feat4{ grid-area:FEAT4; }
+.textcontent{ grid-area:TEXTCONTENT; }
+.sidebar{ grid-area:SIDEBAR; }
+.footer{ grid-area:FOOTER; }
+
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    'LOGO LOGO LOGO PHONENO PHONENO PHONENO'
+    'MENU MENU MENU MENU MENU MENU'
+    'IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW'
+    'FEAT1 FEAT1 FEAT2 FEAT3 FEAT4 FEAT4'
+    'TEXTCONTENT TEXTCONTENT TEXTCONTENT TEXTCONTENT SIDEBAR SIDEBAR'
+    'FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER';
+    gap:10px;
+    background-color: grey;
+    padding:10px;
+}
+.grid-container>div{
+    background-color: white;
+    text-align: center;
+    padding:20px 0;
+    font-size:30px;
+}
+.phoneno{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left: 70px;
+}

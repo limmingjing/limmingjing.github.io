@@ -1,0 +1,32 @@
+.blogmenu{ grid-area: BlOGMENU;}
+.logo{ grid-area:LOGO; }
+.phone{ grid-area:PHONE; }
+.menu{ grid-area:MENU; }
+.slideshow{ grid-area:SLIDESHOW; }
+.textcontent{ grid-area:TEXTCONTENT; }
+.sidebar{ grid-area:SIDEBAR; }
+.footer{ grid-area:FOOTER; }
+
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    'BlOGMENU BlOGMENU BlOGMENU BlOGMENU BlOGMENU BlOGMENU '
+    'LOGO LOGO LOGO LOGO PHONE PHONE'
+    'LOGO LOGO LOGO LOGO MENU MENU' 
+    'SLIDESHOW SLIDESHOW SLIDESHOW SLIDESHOW SIDEBAR SIDEBAR '
+    'TEXTCONTENT TEXTCONTENT TEXTCONTENT TEXTCONTENT SIDEBAR SIDEBAR '
+    'FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER ';
+    gap:10px;
+    background-color: grey;
+    padding:10px;
+}
+.grid-container>div{
+    background-color: white;
+    text-align: center;
+    padding:20px 0;
+    font-size:30px; 
+}
+.phone{
+    margin-left: 100px;
+
+}

@@ -1,0 +1,36 @@
+.logo{ grid-area:LOGO; }
+.phoneno{ grid-area:PHONENO; }
+.menu{ grid-area:MENU; }
+.imageslideshow{ grid-area:IMAGESLIDESHOW; }
+.textcontent{ grid-area:TEXTCONTENT; }
+.sidebar{ grid-area:SIDEBAR; }
+.footer{ grid-area:FOOTER; }
+
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    'LOGO LOGO PHONENO PHONENO PHONENO PHONENO'
+    'LOGO LOGO MENU MENU MENU MENU'   
+    'IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW IMAGESLIDESHOW'
+    'TEXTCONTENT TEXTCONTENT TEXTCONTENT TEXTCONTENT SIDEBAR SIDEBAR'
+    'FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER';
+    gap:10px;
+    background-color: grey;
+    padding:10px;
+}
+.grid-container>div{
+    background-color: white;
+    text-align: center;
+    padding:20px 0;
+    font-size:30px;
+}
+.menu{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.phoneno{
+    margin-left: 200px;
+}
+.menu{
+    margin-left: 70px;
+}
