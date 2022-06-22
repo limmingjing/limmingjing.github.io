@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>week6 homework 1</title>
+</head>
+<style>
+    .header {
+        background-image: url("homework_image/Bg\ Shape@2x.png");
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: top;
+        background-position-x: right;
+        position: relative;
+    }
+
+    .header .mouse {
+        position: absolute;
+        left: 47%;
+        top: 800px;
+    }
+
+    .header .left_facebook {
+        position: absolute;
+        left: 2.5%;
+        top: 30%;
+    }
+
+    .header .left_google {
+        position: absolute;
+        left: 2.5%;
+        top: 33%;
+    }
+
+    .header .left_twitter {
+        position: absolute;
+        left: 2.5%;
+        top: 36%;
+    }
+
+    .header .left_ig {
+        position: absolute;
+        left: 2.5%;
+        top: 39%;
+    }
+
+    .left_navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .marketing {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left_navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: -25px;
+        margin-left: 100px;
+    }
+
+    .marketing p {
+        font-size: 40px;
+        margin-left: 15px;
+        padding-top: 40px;
+    }
+
+    .right_navigation {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-right: 150px;
+        margin-bottom: -25px;
+    }
+
+    .right_navigation p {
+        margin: 5px;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    .social_media {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+    }
+
+    .social_me {
+        padding-top: 90px;
+    }
+
+    .social_media_title {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .social_media {
+        align-items: center;
+        display: flex;
+    }
+
+    .business_title {
+        font-size: 70px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .social_media .text {
+        width: 70;
+    }
+
+    .social_media .getafreeaudit {
+        color: white;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, darkblue, skyblue);
+        padding: 15px;
+        font-size: 14px;
+    }
+
+
+    .biography {
+        flex: 1;
+        padding: 3px;
+        margin-left: 150px;
+    }
+
+    .whoweare {
+        display: flex;
+        align-items: center;
+    }
+
+    .biography .bio {
+        color: blue;
+    }
+
+    .biography .whoweare {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .biography .whowearetext {
+        font-size: 19px;
+    }
+
+    .biography .seemore {
+        color: white;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, darkblue, skyblue);
+        padding: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 14px;
+    }
+
+    .sixservice .topthree {
+        color: blue;
+        font-size: 20px;
+    }
+
+    .ourservices .servicetitle {
+        color: blue;
+        font-size: 20px;
+    }
+
+    .ourservices .offertitle {
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .topthree>div {
+        flex: 1;
+        margin: 40px;
+        padding: 20px;
+        min-height: 32vh;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px -13px blue;
+    }
+
+    .bottomthree>div {
+        flex: 1;
+        margin: 40px;
+        padding: 20px;
+        min-height: 32vh;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px -13px blue;
+    }
+
+    .servicesimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sixservices .topthree {
+        display: flex;
+    }
+
+    .topthree .seemore {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: white;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, darkblue, skyblue);
+        padding: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 10px;
+    }
+
+    .sixservices .bottomthree {
+        display: flex;
+    }
+
+    .bottomthree .seemore {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: white;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, darkblue, skyblue);
+        padding: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 10px;
+    }
+
+    .pricing {
+        text-align: center;
+        background-color: rgb(230, 235, 253);
+        padding-top: 30px;
+    }
+
+    .pricing .pricingtitle {
+        color: blue;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .pricing .ourpricing {
+        font-size: 37px;
+        margin: 0;
+    }
+
+    .pricing>div {
+        display: flex;
+        flex: 1;
+    }
+
+    .pricing .packagestitle {
+        font-size: 28px;
+    }
+
+    .packages>div {
+        margin: 30px;
+        margin-top: 50px;
+        background-color: white;
+        border-radius: 25px;
+        padding: 40px;
+        padding-top: 25px;
+    }
+
+    .packages .money {
+        color: blue;
+        font-size: 28px;
+    }
+
+    .packages .seedetails {
+        background-color: white;
+        border: 2px solid blue;
+        border-radius: 30px;
+        padding: 15px;
+        padding-right: 40px;
+        padding-left: 40px;
+
+    }
+
+    .packages .platinump {
+        box-shadow: 0 0 50px -36px blue;
+    }
+
+    .platinump .seedetails {
+        color: white;
+        border: 0;
+        background-image: linear-gradient(to left, skyblue, darkblue);
+    }
+
+    .newsletter {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .newsletter .newstitle {
+        color: blue;
+        margin-bottom: 0;
+    }
+
+    .newsletter .specialnews {
+        font-size: 25px;
+    }
+
+    .newsletter .searchbar {
+        background-color: lightgray;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        border: none;
+        min-width: 300px;
+        min-height: 30px;
+    }
+
+    .newsletter .subscribe {
+        color: white;
+        border: 0;
+        border-radius: 20px;
+        background-image: linear-gradient(to left, skyblue, darkblue);
+        padding: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .shortcutdiv {
+        background-image: url(homework_image/btm_img.PNG );
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-y: bottom;
+
+    }
+
+    .shortcuts {
+        display: flex;
+        text-align: center;
+        color: white;
+    }
+
+    .blank {
+        min-height: 28vh;
+    }
+
+    .shortcuts>div {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box1 {
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .box1 .logo {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .box1 .stayintouch {
+        font-size: 20px;
+    }
+
+    .box1 .shortcutimg img {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .box2 h5 {
+        text-align: left;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .box2 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .box2 p {
+        text-align: left;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .contact p { 
+        margin-left: 10px;
+    }
+
+    .blank2 {
+        height: 5vh;
+    }
+
+    .socialmediapicture {
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .socialmedia {
+            flex-wrap: wrap;
+        }
+
+        .whoweare {
+            flex-wrap: wrap;
+        }
+
+        .services .ourservices {
+            padding-left: 60px;
+        }
+
+        .sixservices>div {
+            flex-direction: column;
+        }
+
+        .packages {
+            flex-wrap: wrap;
+        }
+    }
+</style>
+
+<body>
+    <div class="header">
+
+
+        <a href="https://www.facebook.com/" target="blank">
+            <img src="homework_image/003-facebook@2x.png" class="left_facebook">
+        </a>
+        <a href="https://www.google.com.my/" target="blank">
+            <img src="homework_image/instagram@2x.png" class="left_google">
+        </a>
+        <a href="https://twitter.com/i/flow/login" target="blank">
+            <img src="homework_image/001-twitter-logo-silhouette@2x.png" class="left_twitter">
+        </a>
+        <a href="https://www.instagram.com/accounts/login/" target="blank">
+            <img src="homework_image/instagram@2x.png" class="left_ig">
+        </a>
+        <div class="marketing">
+            <div class="left_navigation">
+                <img src="homework_image/Group 1539@2x.png" width="100px">
+                <p>Marketing</p>
+            </div>
+            <div class="right_navigation">
+                <p>HOME</p>
+                <p>SERVICES</p>
+                <p>PRICES</p>
+                <p>CONTACT</p>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <div class="social_me">
+                <p class="socialmedia_title">SOCIAL MEDIA</p>
+                <p class="business_title">FOR BUSINESS</p>
+                <p class="text"> PERFOMANCE BASED SOCIAL MEDIA AGENCY
+                    WE ARE LOREM MEDIA</p>
+                <button class="getafreeaudit">
+                    GET A FREE AUDIT
+                </button>
+            </div>
+            <div class="socialmediapicture">
+                <img src="homework_image/Group 1423@2x.png" width="500px" height="auto">
+            </div>
+        </div>
+
+        <div class="whoweare">
+            <div class="whoweare_img">
+                <img src="homework_image/Group 1538.png" width="100%" height="auto">
+            </div>
+            <div class="biography">
+                <p class="bio">Biography</p>
+                <p class="whoweare">Who We Are</p>
+                <p class="whowearetext">
+                    Lorem Media is a full-service social media agency. We offer businesses innovative solutions that
+                    deliver the right type of audience to you in the most effective strategies possible. We strive to
+                    develop a community around your business, polishing your branding, and improving your public
+                    relations.
+                    Social Media is now one of the most powerful marketing tools with the ability to communicate with a
+                    target audience in real time.</p>
+                <br>
+                <p class="whowearetext">It's 2019: time to sink or swim.</p>
+                <br>
+                <p class="whowearetext">We are your Social Media Marketing Agency.</p>
+                <button class="seemore">
+                    SEE MORE
+                </button>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="services">
+        <div class="ourservices">
+            <p class="servicetitle">OUR SERVICES</p>
+            <p class="offertitle">What We Offer</p>
+        </div>
+
+        <div class="sixservices">
+
+            <div class="topthree">
+
+                <div class="smm">
+                    <div class="servicesimg">
+                        <img src="homework_image/001-process@2x.png">
+                    </div>
+                    <p>SOCIAL MEDIA MANAGEMENT</p>
+                    <br>
+                    <p>Perfect for growing your brand’s social community and engage with the right
+                        audience. We manage everything from curation of content to management of
+                      
+                    </p>
+                    <button class="seemore">
+                        SEE MORE
+                    </button>
+                </div>
+
+                <div class="sgc">
+                    <div class="servicesimg">
+                        <img src="homework_image/002-social-media@2x.png" class="servicesimg">
+                    </div>
+                    <p>SOCIALS GROWTH CAMPAIGN</p>
+                    <br>
+                    <p>Our social growth campaign will have your socials come alive.
+                        With constant growth and engagement you will be sure to have the thriving you’ve been looking
+                        for.
+                    </p>
+                    <button class="seemore">
+                        SEE MORE
+                    </button>
+                </div>
+
+                <div class="bnm">
+                    <div class="servicesimg">
+                        <img src="homework_image/003-responsive@2x.png" class="servicesimg">
+                    </div>
+                    <p>BRANDING & MEDIA</p>
+                    <br>
+                    <p>Done right, branding offers a company an edge over the competition. So what exactly is branding,
+                        and why is it important for companies to integrate a well-rounded branding and media strategy?
+                    </p>
+                    <button class="seemore">
+                        SEE MORE
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="bottomthree">
+
+                <div class="im">
+                    <div class="servicesimg">
+                        <img src="homework_image/007-analysis@2x.png" class="servicesimg">
+                    </div>
+                    <p>INFLUENCER MARKETING</p>
+                    <br>
+                    <p>We will pair your business with influencers that speak to your audience. Influencer Marketing is
+                        the most effective way to reach a loyal audience.
+                    </p>
+                    <button class="seemore">
+                        SEE MORE
+                    </button>
+                </div>
+
+                <div class="smpa">
+                    <div class="servicesimg">
+                        <img src="homework_image/004-social-media-1@2x.png" class="servicesimg">
+                    </div>
+                    <p>SOCIAL MEDIA PAID ADVERTING</p>
+                    <br>
+                    <p>Our ad campaigns will bring you the results your looking for. From brand awareness campaigns to
+                        lead funnels, we have got the tools to create the right ads for your business. Our re-targeting
+                        campaigns will be sure to get your visitors coming back to your site.
+                    </p>
+                    <button class="seemore">
+                        SEE MORE
+                    </button>
+                </div>
+
+                <div class="cms">
+                    <div class="servicesimg">
+                        <img src="homework_image/008-computer@2x.png" class="servicesimg">
+                    </div>
+                    <p>CONTENT MARKETING SERVICES</p>
+                    <br>
+                    <p>We can create and provide your company with the best content marketing for your socials to
+                        improve online presence. Creating valuable and quality content helps boost conversions and
+                        improve customer retention.
+                    </p>
+                    <button class="seemore">
+                        SEE MORE
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="pricingnews">
+
+
+        <div class="pricing">
+            <p class="pricingtitle">Pricing</p>
+            <p class="ourpricing">Our Pricing</p>
+
+            <div class="packages">
+
+                <div class="goldp">
+                    <p class="packagestitle">Gold Package</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus
+                        sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse
+                        potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                        Mauris vel iaculis dui.
+                    </p>
+                    <p class="money">$ 140</p>
+                    <button class="seedetails">
+                        See Details
+                    </button>
+                </div>
+
+
+                <div class="platinump">
+                    <p class="packagestitle">Platinum Package</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus
+                        sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse
+                        potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                        Mauris vel iaculis dui.
+                    </p>
+                    <p class="money">$ 140</p>
+                    <button class="seedetails">
+                        See Details
+                    </button>
+                </div>
+
+
+                <div class="silverp">
+                    <p class="packagestitle">Silver Package</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus
+                        sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse
+                        potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                        Mauris vel iaculis dui.
+                    </p>
+                    <p class="money">$ 140</p>
+                    <button class="seedetails">
+                        See Details
+                    </button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="newsletter">
+            <p class="newstitle">Newsletter</p>
+            <p class="specialnews">
+                Do you want to get Special News?
+            </p>
+            <input type="text" placeholder="Drop Your Email" class="searchbar">
+            <button class="subscribe">
+                Subscribe
+            </button>
+
+        </div>
+
+    </div>
+    <div class="shortcutdiv">
+
+        <div class="blank">
+
+        </div>
+
+        <div class="shortcuts">
+
+            <div class="box1">
+                <p class="logo">logo.</p>
+                <p class="stayintouch">Stay in touch</p>
+
+                <div class="shortcutimg">
+                    <a href="https://web.facebook.com/" target="_new">
+                        <img src="homework_image/asset-1@2x.png">
+                    </a>
+                    <a href="https://www.google.com/" target="_new">
+                        <img src="homework_image/asset-3@2x.png">
+                    </a>
+                    <a href="https://twitter.com/" target="_new">
+                        <img src="homework_image/asset-2@2x.png">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_new">
+                        <img src="homework_image/instagram-1@2x.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <h5>Quick Links</h5>
+                <p>
+                    <a href="">About</a>
+                </p>
+                <p>
+                    <a href="">Home</a>
+                </p>
+                <p>
+                    <a href="">Pricing</a>
+                </p>
+                <p>
+                    <a href="">Location</a>
+                </p>
+                <p>
+                    <a href="">Office</a>
+                </p>
+            </div>
+
+            <div class="box2">
+                <h5>Hours</h5>
+                <p>Monday: 9:00 - 18.00</p>
+                <p>Tuesday: 9:00 - 18.00</p>
+                <p>Wednesday: 9:00 - 18.00</p>
+                <p>Thursday: 9:00 - 18.00</p>
+                <p>Friday: 9:00 - 18.00</p>
+            </div>
+
+            <div class="box2">
+                <h5>Contact</h5>
+                <div class="contact">
+                    <img src="homework_image/old-handphone@2x.png" width="5%" height="auto">
+                    <p>000-000-0000</p>
+                </div>
+
+                <div class="contact">
+                    <img src="homework_image/envelope@2x.png" width="5%" height="auto">
+                    <p>info@email.com</p>
+                </div>
+
+                <div class="contact">
+                    <img src="homework_image/maps-and-flags@2x.png " width="5%" height="auto">
+                    <p>New York, US</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="blank2">
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
