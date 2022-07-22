@@ -12,9 +12,11 @@
             justify-content: space-between;
             display: flex;
         }
+
         .mobile_nav .icon:hover {
             color: grey;
         }
+
         .mobile_nav .icon {
             font-size: 60px;
             color: black;
@@ -57,11 +59,17 @@
             margin-right: 20px;
         }
 
-        .box {
+        .box1 {
             width: fit-content;
-            background: rgb(0, 0, 0);
-            color: white;
+            background: rgba(241, 185, 2, 0.671);
+            color: red;
         }
+
+        .box2 {
+            width: fit-content;
+            background: rgba(241, 50, 2, 0.582);
+            color: black;
+        } 
 
         .gamesanddate {
             display: flex;
@@ -94,6 +102,7 @@
 
         .news_container {
             display: flex;
+            background-image: url(../assignment_image/backgroud2.jpg);
         }
 
         .news_text {
@@ -102,7 +111,7 @@
         }
 
         .footer {
-            background-color: black;
+            background-color: rgba(2, 2, 2, 0.849);
             color: white;
             padding-top: 30px;
             padding-left: 20px;
@@ -176,15 +185,125 @@
 
         }
 
+        @media screen and (max-width:810px) {
+            #topnav {
+                display: none;
+            }
+
+            .mobile_nav .icon {
+                font-size: 60px;
+                color: black;
+                display: block;
+            }
+
+            .nav_container {
+                display: block;
+
+            }
+
+            .news_content {
+                font-size: 20px;
+            }
+
+            .highlights {
+                display: block;
+            }
+
+            .highlight_content {
+                width: 80%;
+            }
+
+            .news_container {
+                display: block;
+                margin-top: 40px;
+            }
+
+            .left_content {
+                width: 80%;
+            }
+
+            .right_content {
+                width: 80%;
+            }
+
+            .news_title_container {
+                display: block;
+            }
+
+            .news_title {
+                display: none;
+            }
+
+            .newstop {
+                display: block;
+            }
+
+        }
+
+        @media screen and (max-width:490px) {
+            #topnav {
+                display: none;
+            }
+
+            .mobile_nav .icon {
+                font-size: 60px;
+                color: black;
+                display: block;
+            }
+
+            .nav_container {
+                display: block;
+
+            }
+
+            .news_content {
+                font-size: 20px;
+            }
+
+            .highlights {
+                display: block;
+            }
+
+            .highlight_content {
+                width: 80%;
+            }
+
+            .news_container {
+                display: block;
+                margin-top: 40px;
+            }
+
+            .left_content {
+                width: 80%;
+            }
+
+            .right_content {
+                width: 80%;
+            }
+
+            .news_title_container {
+                display: block;
+            }
+
+            .news_title {
+                display: none;
+            }
+
+            .newstop {
+                display: block;
+            }
+        }
+
         @media screen and (max-width:400px) {
             #topnav {
                 display: none;
             }
+
             .mobile_nav .icon {
-            font-size: 60px;
-            color: black;
-            display: block;
-        }
+                font-size: 60px;
+                color: black;
+                display: block;
+            }
 
             .nav_container {
                 display: block;
@@ -202,6 +321,34 @@
                 width: 80%;
             }
         }
+        @media screen and (max-width: 320px) {
+            #topnav {
+                display: none;
+            }
+
+            .mobile_nav .icon {
+                font-size: 60px;
+                color: black;
+                display: block;
+            }
+
+            .nav_container {
+                display: block;
+            }
+
+            .news_container {
+                display: block;
+            }
+
+            .left_content {
+                width: 80%;
+            }
+
+            .right_content {
+                width: 80%;
+            }  
+        }
+
     </style>
     <title>
         news
@@ -214,10 +361,10 @@
 
         <div class="toplogo">
             <div>
-                <img src="../assignment image/twitter icon.png" class="top_twitter">
+                <img src="../assignment_image/twitter icon.png" class="top_twitter">
             </div>
             <div class="logo">
-                <img src="../assignment image/logo_title.png" class="logo" width="200px">
+                <img src="../assignment_image/logo_title.png" class="logo" width="200px">
             </div>
             <div class="mobile_nav">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -229,27 +376,27 @@
 
         <div id="topnav">
             <div class="home_icon">
-                <img src="../assignment image/home icon.png" width="40px" height="40px">
-                <a href="#">HOME</a>
+                <img src="../assignment_image/home icon.png" width="40px" height="40px">
+                <a href="home.html">HOME</a>
             </div>
 
             <div class="news_icon">
-                <img src="../assignment image/newspaper.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/newspaper.icon.png" width="40px" height="40px">
                 <a href="news.html">NEWS</a>
             </div>
 
             <div class="hightlights_icon">
-                <img src="../assignment image/highlight.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/highlight.icon.png" width="40px" height="40px">
                 <a href="highlight.html">HIGHTLIGHTS</a>
             </div>
 
             <div class="contactus_icon">
-                <img src="../assignment image/contact.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/contact.icon.png" width="40px" height="40px">
                 <a href="contact_us.html">CONTACT US</a>
             </div>
 
             <div class="featured.icon">
-                <img src="../assignment image/featured.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/featured.icon.png" width="40px" height="40px">
                 <a href="featured.html">FEATURED</a>
             </div>
         </div>
@@ -257,9 +404,9 @@
     <h1>NEWS</h1>
     <div class="news_container">
         <div class="left_content">
-            <img src="../assignment image/news_4.jpg" width="100%">
+            <img src="../assignment_image/news_4.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>
@@ -269,9 +416,9 @@
             <div class="news_text">
                 "Infinite Ultimate Battle! Dokkan 7th Anniv. Grand Celebration" Is on in Dragon Ball Z Dokkan Battle!
             </div>
-            <img src="../assignment image/news01.png" width="100%">
+            <img src="../assignment_image/news01.png" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>
@@ -281,9 +428,9 @@
             <div class="news_text">
                 "The Universe's Strongest Guild Ultimate Brawl 4th ANNIVERSARY" Guild Season On
             </div>
-            <img src="../assignment image/news_2.jpg" width="100%">
+            <img src="../assignment_image/news_2.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>
@@ -293,9 +440,9 @@
             <div class="news_text">
                 Dragon Ball Xenoverse 2 Conton City Vote Pack Is Coming July 7 (Thur)!! Free Update on July 6
             </div>
-            <img src="../assignment image/news02.jpg" width="100%">
+            <img src="../assignment_image/news02.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box2">
                     ANIME
                 </div>
                 <div>
@@ -305,9 +452,9 @@
             <div class="news_text">
                 Dragon Ball Coming to Comic-Con International: San Diego
             </div>
-            <img src="../assignment image/hightlight_2.jpg" width="100%">
+            <img src="../assignment_image/hightlight_2.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>
@@ -320,9 +467,9 @@
 
         </div>
         <div class="right_content">
-            <img src="../assignment image/highlight_1.jpg" width="100%">
+            <img src="../assignment_image/highlight_1.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box2">
                     FIGURES
                 </div>
                 <div>
@@ -332,9 +479,9 @@
             <div class="news_text">
                 Porunga & Dende Is Coming to the S.H.Figuarts Series!
             </div>
-            <img src="../assignment image/image 17.png" width="100%">
+            <img src="../assignment_image/image 17.png" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box1">
                     FIGURES
                 </div>
                 <div>
@@ -344,9 +491,9 @@
             <div class="news_text">
                 Brand-New SOLID EDGE WORKS-THE SHUTSUJIN- Figures Coming to Game Centers!
             </div>
-            <img src="../assignment image/news_3.jpg" width="100%">
+            <img src="../assignment_image/news_3.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box2">
                     FIGURED
                 </div>
                 <div>
@@ -356,9 +503,9 @@
             <div class="news_text">
                 Weekly ☆ Character Showcase #61: Goten!
             </div>
-            <img src="../assignment image/news03.jpg" width="100%">
+            <img src="../assignment_image/news03.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box1">
                     BOOKS
                 </div>
                 <div>
@@ -368,9 +515,9 @@
             <div class="news_text">
                 Dragon Ball News and Manga Galore in Saikyo Jump's Super-Sized August Issue On Sale
             </div>
-            <img src="../assignment image/image 74.png" width="100%">
+            <img src="../assignment_image/image 74.png" width="100%">
             <div class="newsgamesanddate">
-                <div class="box">
+                <div class="box2">
                     FEATURED
                 </div>
                 <div>
@@ -390,7 +537,7 @@
                     SHUEISHA
                 </div>
                 <div>
-                    <img src="../assignment image/logo_BNE.png" width="150px">
+                    <img src="../assignment_image/logo_BNE.png" width="150px">
                 </div>
             </div>
             <div class="first_studio">
@@ -403,10 +550,10 @@
         <div class="right_footer">
             <div class="followus">Follow Us</div>
             <div class="contact_icon">
-                <img src="../assignment image/ing icon.png" width="30px">
-                <img src="../assignment image/fb icon.png" width="30px">
-                <img src="../assignment image/youtube icon.png" width="30px">
-                <img src="../assignment image/twitter icon footer.png" width="30px">
+                <img src="../assignment_image/ing icon.png" width="30px">
+                <img src="../assignment_image/fb icon.png" width="30px">
+                <img src="../assignment_image/youtube icon.png" width="30px">
+                <img src="../assignment_image/twitter icon footer.png" width="30px">
             </div>
             <div class="copyright">Copyright © 2021. All rights reserved. Privacy Policy</div>
         </div>

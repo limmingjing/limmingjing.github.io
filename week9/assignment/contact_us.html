@@ -55,27 +55,49 @@
             margin-right: 20px;
         }
 
-        .title {
+        .formcontainer {
+            background-image: url(../assignment_image/background.1.jpg);
+        }
+
+        .Name {
+            display: flex;
+        }
+
+        .lastName {
+            margin-left: 10px;
+        }
+
+        .city_region {
+            display: flex;
+        }
+
+        .submit {
             text-align: center;
-            font-weight: bolder;
-            font-size: 30px;
-            margin-top: 50px;
+            margin-top: 10px;
         }
 
-        .title_bottom {
-            text-align: center;
-            text-align: justify;
-            font-size: 20px;
-            margin-top: 40px;
-
+        .sendbutton {
+            background-color: rgb(120, 196, 120);
         }
 
-        .orange_title {
-            color: orange;
+        .sendbutton:hover {
+            background-color: rgb(136, 240, 136);
+            cursor: pointer;
         }
 
+        .Region {
+            margin-left: 10px;
+        }
+
+        .Country {
+            margin-left: 10px;
+        }
+
+        .formcontainer {
+            margin-top: 20px;
+        }
         .footer {
-            background-color: black;
+            background-color: rgba(2, 2, 2, 0.849);
             color: white;
             padding-top: 30px;
             padding-left: 20px;
@@ -105,7 +127,7 @@
         }
 
         .copyright {
-            font-size: 20px;
+           
             right: 5px;
             bottom: 5px;
         }
@@ -118,11 +140,60 @@
             font-weight: bolder;
             font-size: 20px;
         }
+        
+            @media screen and (max-width:812px) {
+            #topnav {
+                display: none;
+            }
 
-        .all_content {
-            margin-left: 25px;
+            .mobile_nav .icon {
+                font-size: 60px;
+                color: black;
+                display: block;
+            }
+
+            .nav_container {
+                display: block;
+
+            }
+
+            .news_content {
+                font-size: 20px;
+            }
+
+            .highlights {
+                display: block;
+            }
+
+            .highlight_content {
+                width: 80%;
+            }
+
+            .news_container {
+                display: block;
+                margin-top: 40px;
+            }
+
+            .left_content {
+                width: 80%;
+            }
+
+            .right_content {
+                width: 80%;
+            }
+
+            .news_title_container {
+                display: block;
+            }
+
+            .news_title {
+                display: none;
+            }
+
+            .newstop {
+                display: block;
+            }         
         }
-
         @media screen and (max-width:650px) {
             .footer {
                 display: block;
@@ -138,23 +209,20 @@
             .left_footer {
                 width: 100%;
             }
-
+        }
+        @media screen and (max-width:446px){
+          #textbox{
+            width: 100%;
+          }  
         }
 
-        @media screen and (max-width:400px) {
-            #topnav {
-                display: none;
-            }
 
-            .mobile_nav .icon {
-                font-size: 60px;
-                color: black;
-                display: block;
-            }
-        }
+
+
+      
     </style>
     <title>
-        contact us
+        Contact Us
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -164,10 +232,10 @@
 
         <div class="toplogo">
             <div>
-                <img src="../assignment image/twitter icon.png" class="top_twitter">
+                <img src="../assignment_image/twitter icon.png" class="top_twitter">
             </div>
             <div class="logo">
-                <img src="../assignment image/logo_title.png" class="logo" width="200px">
+                <img src="../assignment_image/logo_title.png" class="logo" width="200px">
             </div>
             <div class="mobile_nav">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -179,89 +247,61 @@
 
         <div id="topnav">
             <div class="home_icon">
-                <img src="../assignment image/home icon.png" width="40px" height="40px">
-                <a href="#">HOME</a>
+                <img src="../assignment_image/home icon.png" width="40px" height="40px">
+                <a href="home.html">HOME</a>
             </div>
 
             <div class="news_icon">
-                <img src="../assignment image/newspaper.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/newspaper.icon.png" width="40px" height="40px">
                 <a href="news.html">NEWS</a>
             </div>
 
             <div class="hightlights_icon">
-                <img src="../assignment image/highlight.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/highlight.icon.png" width="40px" height="40px">
                 <a href="highlight.html">HIGHTLIGHTS</a>
             </div>
 
             <div class="contactus_icon">
-                <img src="../assignment image/contact.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/contact.icon.png" width="40px" height="40px">
                 <a href="contact_us.html">CONTACT US</a>
             </div>
 
             <div class="featured.icon">
-                <img src="../assignment image/featured.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/featured.icon.png" width="40px" height="40px">
                 <a href="featured.html">FEATURED</a>
             </div>
         </div>
     </div>
-    <div class="all_content">
-        <div class="title">Dragon Ball Official Site Inquiries</div>
-        <div class="title_bottom">
-            <p>Listed below are the websites or contact information for goods and services related to Official Site
-                news.
-            </p>
-            <p>Please contact the appropriate seller for the goods or services you would like to inquire about.</p>
-        </div>
-        <div class="mangabook">
-            <h3>Manga & Books</h3>
-            <p>Inquiries for Bandai Products</p>
-            <div class="orange_title">▶ <u>Bandai Customer Support</u></div>
-            <p>※Inquiries in Japanese only.</p>
-        </div>
-        <h3>Children's Toys, Capsule Toys, Cards, Candy, Food Products, Apparel, and Daily Goods</h3>
-
-
-        <p>Inquiries for Bandai Products</p>
-        <div class="orange_title">▶ <u>Bandai Customer Support</u></div>
-
-        <p>Inquiries for BANDAI SPIRITS Products</p>
-        <div class="orange_title">▶ <u>Bandai SPIRITS Customer Support</u></div>
-
-        <p>Inquiries for Bandai Premium Products for Hong Kong S.A.R & Macau S.A.R, Taiwan, Singapore, and North America
-        </p>
-        <div class="orange_title">▶ <u>Bandai (Premium Bandai) - Taiwan</u>
-            <div>▶ <u>Bandai (Premium Bandai) - Hong Kong S.A.R & Macau S.A.R </u></div>
-            <div>▶ <u>Bandai (Premium Bandai) - Singapore </u></div>
-            <div>▶ <u>Bandai (Premium Bandai) - USA </u></div>
-        </div>
-
-        <p>Inquiries for Non-Bandai Goods & Toys</p>
-        <div class="orange_title">▶ <u>Toei Animation </u></div>
-
-        <p>Inquiries for Carddass (Campaigns, How to Play, etc.)</p>
-        <div class="orange_title">▶ <u>Carddass.com </u></div>
-
-        <h3>Anime</h3>
-        <p>Inquiries for Anime TV Series</p>
-        <div class="orange_title">▶ <u>Toei Animation </u></div>
-
-        <p>Inquiries for Blu-ray & DVDs</p>
-        <div class="orange_title">▶ <u>Toei Animation </u></div>
-
-        <p>Inquiries for Movies</p>
-        <div class="orange_title">▶ <u>Toei Animation </u></div>
-        <div>Inquiries for Streaming Services</div>
-        <div>Please contact the appropriate streaming service.</div>
-
-        <h3>Console Games (PlayStation 4, Nintendo Switch, etc.)</h3>
-        <p>Inquiries for Console Games Sold in Japan</p>
-        <div class="orange_title">▶ <u>Bandai Namco Entainment </u></div>
-
-        <p>※Inquiries in Japanese only.</p>
-
-        <p>Inquiries for Console Games Sold in North America</p>
-        <div class="orange_title">▶ <u>Bandai Namco Entainment America </u></div>
-    </div>
+    
+        <form name="myForm" action="form_submit.html" class="formcontainer">
+            <fieldset>
+                <legend>Contact Us</legend>
+                Name<br>
+                <div class="name_container">
+                    <div class="Name">
+                        <input type="text" name="Name" placeholder="First">
+                        <input type="text" class="lastName" placeholder="Last"><br><br>
+                    </div>
+                </div>
+                <br>
+                Email<br>
+                <input type="text" name="Email" placeholder="Put your email"> <br><br>
+                Phone<br>
+                <input type="tel" name="Phone" placeholder="Put your phone number "><br><br>
+                gender<br>
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="female" value="female">Female<br><br>
+                <div>Your Comment</div>
+                <textarea id="textbox" name="w3review" rows="4" cols="50" placeholder="Your Comment"></textarea>
+                <div class="submit">
+                    <a href="submitted.html">
+                        <input type="button" class="sendbutton" value="Submit">
+                    </a>
+                </div>
+            </fieldset>
+          
+        </form>
+    
     <div class="footer">
         <div class="left_footer">
             <div class="top_footer">
@@ -269,7 +309,7 @@
                     SHUEISHA
                 </div>
                 <div>
-                    <img src="../assignment image/logo_BNE.png" width="150px">
+                    <img src="../assignment_image/logo_BNE.png" width="150px">
                 </div>
             </div>
             <div class="first_studio">
@@ -282,15 +322,14 @@
         <div class="right_footer">
             <div class="followus">Follow Us</div>
             <div class="contact_icon">
-                <img src="../assignment image/ing icon.png" width="30px">
-                <img src="../assignment image/fb icon.png" width="30px">
-                <img src="../assignment image/youtube icon.png" width="30px">
-                <img src="../assignment image/twitter icon footer.png" width="30px">
+                <img src="../assignment_image/ing icon.png" width="30px">
+                <img src="../assignment_image/fb icon.png" width="30px">
+                <img src="../assignment_image/youtube icon.png" width="30px">
+                <img src="../assignment_image/twitter icon footer.png" width="30px">
             </div>
             <div class="copyright">Copyright © 2021. All rights reserved. Privacy Policy</div>
         </div>
     </div>
-
 
 </body>
 <script>

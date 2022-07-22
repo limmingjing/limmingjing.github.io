@@ -57,8 +57,9 @@
         .popular_box {
             background-color: yellow;
             color: black;
-            width: fit-content;
+            width: 100px;
             margin-left: 10px;
+
         }
 
         .popular_articles {
@@ -67,11 +68,17 @@
             margin-bottom: 30px;
         }
 
-        .box {
+        .box1 {
             width: fit-content;
-            background: rgb(0, 0, 0);
-            color: white;
+            background: rgba(241, 185, 2, 0.671);
+            color: red;
         }
+
+        .box2 {
+            width: fit-content;
+            background: rgba(241, 50, 2, 0.582);
+            color: black;
+        } 
 
         .gamesanddate {
             display: flex;
@@ -82,6 +89,7 @@
 
         .article_container {
             display: flex;
+            background-image: url(../assignment_image/background3.png);
         }
 
         .left_content {
@@ -109,6 +117,7 @@
         .bottom_article_container {
             display: flex;
             justify-content: center;
+            background-image: url(../assignment_image/background4.jpg);
         }
 
         .left_container {
@@ -133,7 +142,7 @@
         }
 
         .footer {
-            background-color: black;
+            background-color: rgba(2, 2, 2, 0.849);
             color: white;
             padding-top: 30px;
             padding-left: 20px;
@@ -176,6 +185,43 @@
             font-weight: bolder;
             font-size: 20px;
         }
+        @media screen and (max-width:812px) {
+            #topnav {
+                display: none;
+            }
+            .mobile_nav .icon {
+            font-size: 60px;
+            color: black;
+            display: block;
+        }
+            .article_container{
+                display: block;
+            }
+            .left_content{
+                width: 80%;
+            }
+            .middle_content{
+                width: 80%;
+            }
+            .right_content{
+                width: 80%;
+            }
+            .bottom_article_container{
+                display: block;
+            }
+            .left_container{
+                width: 80%;
+            }
+            .middle_container{
+                width: 80%;
+            }
+            .right_container{
+                width: 80%;
+            }
+            
+        }
+            
+        
         @media screen and (max-width:650px) {
             .footer {
                 display: block;
@@ -240,10 +286,10 @@
 
         <div class="toplogo">
             <div>
-                <img src="../assignment image/twitter icon.png" class="top_twitter">
+                <img src="../assignment_image/twitter icon.png" class="top_twitter">
             </div>
             <div class="logo">
-                <img src="../assignment image/logo_title.png" class="logo" width="200px">
+                <img src="../assignment_image/logo_title.png" class="logo" width="200px">
             </div>
             <div class="mobile_nav">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -255,27 +301,27 @@
 
         <div id="topnav">
             <div class="home_icon">
-                <img src="../assignment image/home icon.png" width="40px" height="40px">
-                <a href="#">HOME</a>
+                <img src="../assignment_image/home icon.png" width="40px" height="40px">
+                <a href="home.html">HOME</a>
             </div>
 
             <div class="news_icon">
-                <img src="../assignment image/newspaper.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/newspaper.icon.png" width="40px" height="40px">
                 <a href="news.html">NEWS</a>
             </div>
 
             <div class="hightlights_icon">
-                <img src="../assignment image/highlight.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/highlight.icon.png" width="40px" height="40px">
                 <a href="highlight.html">HIGHTLIGHTS</a>
             </div>
 
             <div class="contactus_icon">
-                <img src="../assignment image/contact.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/contact.icon.png" width="40px" height="40px">
                 <a href="contact_us.html">CONTACT US</a>
             </div>
 
             <div class="featured.icon">
-                <img src="../assignment image/featured.icon.png" width="40px" height="40px">
+                <img src="../assignment_image/featured.icon.png" width="40px" height="40px">
                 <a href="featured.html">FEATURED</a>
             </div>
         </div>
@@ -290,9 +336,9 @@
     </div>
     <div class="article_container">
         <div class="left_content">
-            <img src="../assignment image/highlight_1.jpg" width="100%">
+            <img src="../assignment_image/highlight_1.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>05.07.2022</div>
@@ -300,9 +346,9 @@
             <div class="text">
                 Dragon Ball Xenoverse 2 Conton City Vote Pack Is Coming July 7 (Thur)!! Free Update on July 6
             </div>
-            <img src="../assignment image/h220608000-1.jpg" width="100%">
+            <img src="../assignment_image/h220608000-1.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>14.06.2022</div>
@@ -312,9 +358,9 @@
             </div>
         </div>
         <div class="middle_content">
-            <img src="../assignment image/hightlight_2.jpg" width="100%">
+            <img src="../assignment_image/hightlight_2.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>30.06.2022</div>
@@ -322,9 +368,9 @@
             <div class="text">
                 "Dokkan 7th Anniversary! Countdown Campaign!" and "Dokkan Scout Campaign" Are
             </div>
-            <img src="../assignment image/n220702222-1.jpg" width="100%">
+            <img src="../assignment_image/n220702222-1.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box2">
                     FEATURED
                 </div>
                 <div>30.06.2022</div>
@@ -334,9 +380,9 @@
             </div>
         </div>
         <div class="right_content">
-            <img src="../assignment image/highlight_3.jpg" width="100%">
+            <img src="../assignment_image/highlight_3.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>08.06.2022</div>
@@ -350,9 +396,9 @@
     <h2>POPULAR ARTICLES</h2>
     <div class="bottom_article_container">
         <div class="left_container">
-            <img src="../assignment image/hightlight_2.jpg" width="100%">
+            <img src="../assignment_image/hightlight_2.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>05.07.2022</div>
@@ -360,9 +406,9 @@
             <div class="text">
                 Dragon Ball Xenoverse 2 Conton City Vote Pack Is Coming July 7 (Thur)!! Free Update on July 6
             </div>
-            <img src="../assignment image/bottom article01.jpg" width="100%">
+            <img src="../assignment_image/bottom article01.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box1">
                     ANIME
                 </div>
                 <div>04.07.2022</div>
@@ -370,9 +416,9 @@
             <div class="text">
                 Dragon Ball Coming to Comic-Con International: San Diego
             </div>
-            <img src="../assignment image/n220702222-1.jpg" width="100%">
+            <img src="../assignment_image/n220702222-1.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>05.07.2022</div>
@@ -382,9 +428,9 @@
             </div>
         </div>
         <div class="middle_container">
-            <img src="../assignment image/highlight_3.jpg" width="100%">
+            <img src="../assignment_image/highlight_3.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>30.06.2022</div>
@@ -392,9 +438,9 @@
             <div class="text">
                 "Dokkan 7th Anniversary! Countdown Campaign!" and "Dokkan Scout Campaign" Are
             </div>
-            <img src="../assignment image/u220414001-10.jpg" width="100%">
+            <img src="../assignment_image/u220414001-10.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box2">
                     FEATURED
                 </div>
                 <div>29.06.2022</div>
@@ -402,9 +448,9 @@
             <div class="text">
                 [June 2022] Toyotarou Tried to Draw: Android Special Part 5!
             </div>
-            <img src="../assignment image/news_3.jpg" width="100%">
+            <img src="../assignment_image/news_3.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>05.07.2022</div>
@@ -414,9 +460,9 @@
             </div>
         </div>
         <div class="right_container">
-            <img src="../assignment image/h220608000-1.jpg" width="100%">
+            <img src="../assignment_image/h220608000-1.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box2">
                     FEATURED
                 </div>
                 <div>30.06.2022</div>
@@ -424,9 +470,9 @@
             <div class="text">
                 A One-Sided Rivalry? Goku and Vegeta's Relationship as Analyzed by a Psychology Exp...
             </div>
-            <img src="../assignment image/image 83.png" width="100%">
+            <img src="../assignment_image/image 83.png" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box1">
                     ANIME
                 </div>
                 <div>04.07.2022</div>
@@ -434,9 +480,9 @@
             <div class="text">
                 Dragon Ball Super: SUPER HERO's Japanese Premier Is Finally Here!
             </div>
-            <img src="../assignment image/image 74.png" width="100%">
+            <img src="../assignment_image/image 74.png" width="100%">
             <div class="gamesanddate">
-                <div class="box">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>14.06.2022</div>
@@ -453,7 +499,7 @@
                     SHUEISHA
                 </div>
                 <div>
-                    <img src="../assignment image/logo_BNE.png" width="150px">
+                    <img src="../assignment_image/logo_BNE.png" width="150px">
                 </div>
             </div>
             <div class="first_studio">
@@ -466,10 +512,10 @@
         <div class="right_footer">
             <div class="followus">Follow Us</div>
             <div class="contact_icon">
-                <img src="../assignment image/ing icon.png" width="30px">
-                <img src="../assignment image/fb icon.png" width="30px">
-                <img src="../assignment image/youtube icon.png" width="30px">
-                <img src="../assignment image/twitter icon footer.png" width="30px">
+                <img src="../assignment_image/ing icon.png" width="30px">
+                <img src="../assignment_image/fb icon.png" width="30px">
+                <img src="../assignment_image/youtube icon.png" width="30px">
+                <img src="../assignment_image/twitter icon footer.png" width="30px">
             </div>
             <div class="copyright">Copyright © 2021. All rights reserved. Privacy Policy</div>
         </div>

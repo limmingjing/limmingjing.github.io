@@ -31,6 +31,7 @@
             padding-top: 5px;
             padding-bottom: 5px;
             margin-top: 30px
+            
         }
 
         #topnav a {
@@ -62,7 +63,9 @@
 
         .main_container {
             text-align: center;
-            margin-top: 50px;
+            padding-top: 50px;
+            padding-bottom:30px;
+            background-image: url(../assignment_image/background.1.jpg);
         }
 
         .latetest_update {
@@ -94,10 +97,16 @@
             width: 33.33%;
         }
 
-        .box_games {
+        .box1 {
             width: fit-content;
-            background: rgb(0, 0, 0);
-            color: white;
+            background: rgba(241, 185, 2, 0.671);
+            color: red;
+        }
+
+        .box2 {
+            width: fit-content;
+            background: rgba(241, 50, 2, 0.582);
+            color: black;
         }
 
         .gamesanddate {
@@ -150,7 +159,7 @@
         }
 
         .footer {
-            background-color: black;
+            background-color: rgba(2, 2, 2, 0.849);
             color: white;
             padding-top: 30px;
             padding-left: 20px;
@@ -195,7 +204,8 @@
         }
 
         h1 {
-            margin-top: 50px;
+            margin-top: 20px;
+            margin-left: 15px;
         }
 
         .logo {
@@ -210,7 +220,116 @@
             display: none;
         }
 
+      
+      @media screen and (max-width:810px){
+        #topnav {
+                display: none;
+            }
 
+            .mobile_nav .icon {
+                font-size: 60px;
+                color: black;
+                display: block;
+            }
+
+            .nav_container {
+                display: block;
+
+            }
+
+            .news_content {
+                font-size: 20px;
+            }
+
+            .highlights {
+                display: block;
+            }
+
+            .highlight_content {
+                width: 80%;
+            }
+
+            .news_container {
+                display: block;
+                margin-top: 40px;
+            }
+
+            .left_content {
+                width: 80%;
+            }
+
+            .right_content {
+                width: 80%;
+            }
+
+            .news_title_container {
+                display: block;
+            }
+
+            .news_title {
+                display: none;
+            }
+
+            .newstop {
+                display: block;
+            }
+
+      }
+@media screen and (max-width:490px) {
+    #topnav {
+                display: none;
+            }
+
+            .mobile_nav .icon {
+                font-size: 60px;
+                color: black;
+                display: block;
+            }
+
+            .nav_container {
+                display: block;
+
+            }
+
+            .news_content {
+                font-size: 20px;
+            }
+
+            .highlights {
+                display: block;
+            }
+
+            .highlight_content {
+                width: 80%;
+            }
+
+            .news_container {
+                display: block;
+                margin-top: 40px;
+            }
+
+            .left_content {
+                width: 80%;
+            }
+
+            .right_content {
+                width: 80%;
+            }
+
+            .news_title_container {
+                display: block;
+            }
+
+            .news_title {
+                display: none;
+            }
+
+            .newstop {
+                display: block;
+            }
+
+    
+}
         @media screen and (max-width:650px) {
             .footer {
                 display: block;
@@ -281,6 +400,12 @@
             .newstop {
                 display: block;
             }
+            .top_background{
+                background-image: url(../assignment_image/background.jpg);
+            }
+
+          
+
 
 
 
@@ -296,62 +421,66 @@
 </head>
 
 <body>
-    <div class="nav_container">
+    <div class="top_background">
 
-        <div class="toplogo">
-            <div>
-                <img src="../assignment image/twitter icon.png" class="top_twitter">
-            </div>
-            <div class="logo">
-                <img src="../assignment image/logo_title.png" class="logo" width="200px">
-            </div>
-            <div class="mobile_nav">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
+        <div class="nav_container">
 
-
-        <div id="topnav">
-            <div class="home_icon">
-                <img src="../assignment image/home icon.png" width="40px" height="40px">
-                <a href="home.html">HOME</a>
+            <div class="toplogo">
+                <div>
+                    
+                    <a href="https://twitter.com/DB_official_en/"><img src="../assignment_image/twitter icon.png" class="top_twitter"></a>
+                </div>
+                <div class="logo">
+                    <img src="../assignment_image/logo_title.png" class="logo" width="200px">
+                </div>
+                <div class="mobile_nav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="news_icon">
-                <img src="../assignment image/newspaper.icon.png" width="40px" height="40px">
-                <a href="news.html">NEWS</a>
-            </div>
 
-            <div class="hightlights_icon">
-                <img src="../assignment image/highlight.icon.png" width="40px" height="40px">
-                <a href="highlight.html">HIGHTLIGHTS</a>
-            </div>
+            <div id="topnav">
+                <div class="home_icon">
+                    <img src="../assignment_image/home icon.png" width="40px" height="40px">
+                    <a href="home.html">HOME</a>
+                </div>
 
-            <div class="contactus_icon">
-                <img src="../assignment image/contact.icon.png" width="40px" height="40px">
-                <a href="contact_us.html">CONTACT US</a>
-            </div>
+                <div class="news_icon">
+                    <img src="../assignment_image/newspaper.icon.png" width="40px" height="40px">
+                    <a href="news.html">NEWS</a>
+                </div>
 
-            <div class="featured.icon">
-                <img src="../assignment image/featured.icon.png" width="40px" height="40px">
-                <a href="featured.html">FEATURED</a>
+                <div class="hightlights_icon">
+                    <img src="../assignment_image/highlight.icon.png" width="40px" height="40px">
+                    <a href="highlight.html">HIGHTLIGHTS</a>
+                </div>
+
+                <div class="contactus_icon">
+                    <img src="../assignment_image/contact.icon.png" width="40px" height="40px">
+                    <a href="contact_us.html">CONTACT US</a>
+                </div>
+
+                <div class="featured.icon">
+                    <img src="../assignment_image/featured.icon.png" width="40px" height="40px">
+                    <a href="featured.html">FEATURED</a>
+                </div>
             </div>
         </div>
     </div>
     <div class="main_container">
         <div class="nav_bottom">
-            <img src="../assignment image/a.jpg" width="70%" height="auto">
+            <img src="../assignment_image/a.jpg" width="70%" height="auto">
         </div>
         <div class="latetest_update">
-            <img src="../assignment image/b.png" class="left_jpg" width="90px">
+            <img src="../assignment_image/b.png" class="left_jpg" width="90px">
             <div class="news_content">
                 <div>
                     <p>07.07 .2022 “Infinite Ultimate Battle! Dokkan 7th Anniv. Grand Celebration” Is on in Dragon
                         Battle!
                     </p>
-                    <p>076.07.2022 Porunga & Denda Is Coming to the S.H.Figuarts Series!</p>
+                    <p>06.07.2022 Porunga & Denda Is Coming to the S.H.Figuarts Series!</p>
                 </div>
             </div>
         </div>
@@ -359,9 +488,9 @@
     <h1>HIGHTLIGHTS</h1>
     <div class="highlights">
         <div class="highlight_content">
-            <img src="../assignment image/highlight_1.jpg" width="100%">
+            <img src="../assignment_image/highlight_1.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box_games">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>
@@ -374,9 +503,9 @@
         </div>
 
         <div class="highlight_content">
-            <img src="../assignment image/hightlight_2.jpg" width="100%">
+            <img src="../assignment_image/hightlight_2.jpg" width="100%">
             <div class="gamesanddate">
-                <div class="box_games">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>
@@ -389,10 +518,10 @@
         </div>
 
         <div class="highlight_content">
-            <img src="../assignment image/highlight_3.jpg" width="93.5%">
+            <img src="../assignment_image/highlight_3.jpg" width="93.5%">
 
             <div class="gamesanddate">
-                <div class="box_games">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>
@@ -410,9 +539,9 @@
     <div class="news_container">
 
         <div class="left_content">
-            <img src="../assignment image/highlight_1.jpg" width="100%">
+            <img src="../assignment_image/highlight_1.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box_games">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>
@@ -422,9 +551,9 @@
             <div class="news_text">
                 "Infinite Ultimate Battle! Dokkan 7th Anniv. Grand Celebration" Is on in Dragon Ball Z Dokkan Battle!
             </div>
-            <img src="../assignment image/news_2.jpg" width="100%">
+            <img src="../assignment_image/news_2.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box_games">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>
@@ -437,9 +566,9 @@
         </div>
 
         <div class="right_content">
-            <img src="../assignment image/news_3.jpg" width="100%">
+            <img src="../assignment_image/news_3.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box_games">
+                <div class="box2">
                     GAMES
                 </div>
                 <div>
@@ -450,9 +579,9 @@
                 "The Universe's Strongest Guild Ultimate Brawl 4th ANNIVERSARY" Guild Season On Now in Dragon Ball
                 Legends!
             </div>
-            <img src="../assignment image/news_4.jpg" width="100%">
+            <img src="../assignment_image/news_4.jpg" width="100%">
             <div class="newsgamesanddate">
-                <div class="box_games">
+                <div class="box1">
                     GAMES
                 </div>
                 <div>
@@ -477,7 +606,7 @@
                     SHUEISHA
                 </div>
                 <div>
-                    <img src="../assignment image/logo_BNE.png" width="150px">
+                    <img src="../assignment_image/logo_BNE.png" width="150px">
                 </div>
             </div>
             <div class="first_studio">
@@ -490,10 +619,10 @@
         <div class="right_footer">
             <div class="followus">Follow Us</div>
             <div class="contact_icon">
-                <img src="../assignment image/ing icon.png" width="30px">
-                <img src="../assignment image/fb icon.png" width="30px">
-                <img src="../assignment image/youtube icon.png" width="30px">
-                <img src="../assignment image/twitter icon footer.png" width="30px">
+                <img src="../assignment_image/ing icon.png" width="30px">
+                <img src="../assignment_image/fb icon.png" width="30px">
+                <img src="../assignment_image/youtube icon.png" width="30px">
+                <img src="../assignment_image/twitter icon footer.png" width="30px">
             </div>
             <div class="copyright">Copyright © 2021. All rights reserved. Privacy Policy</div>
         </div>
