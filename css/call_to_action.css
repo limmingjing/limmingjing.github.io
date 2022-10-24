@@ -1,0 +1,46 @@
+.callToAction_big_container {
+   color: white;
+   background-color:rgba(61,78,107,255); 
+}
+
+.callToAction_container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+}
+
+.callToAction_title{
+    width: 75%;
+}
+
+.callToAction_btn a:hover{
+    cursor: pointer;
+    background-color:white ;
+    color: rgba(61,78,107,255);
+    border-radius: 20px;
+}
+
+.callToAction_btn a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    color:white;
+}
+
+@media screen and (max-width: 992px) {
+
+    .callToAction_container{
+        max-width: 620px;
+        display: block;
+        text-align: center;
+    }
+
+    .callToAction_title{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+}
+
+

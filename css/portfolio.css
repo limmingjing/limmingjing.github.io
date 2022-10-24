@@ -1,0 +1,36 @@
+.portfolio_title h3{
+    color: rgba(55, 81, 126, 255);
+}
+
+.portfolio_img {
+    columns: 3;
+    column-gap: 20px;
+}
+
+.portfolio_img img{
+    margin-bottom: 20px;
+}
+
+.portfolio_img_one_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    .portfolio_container{
+        max-width: 620px;
+    }
+
+    .portfolio_img {
+        columns: 1;
+    }
+
+    .portfolio_img_one_mobile {
+        display: block;
+    }
+
+    .portfolio_img_one_hide{
+        display: none;
+    }
+
+}

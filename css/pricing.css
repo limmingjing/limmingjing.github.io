@@ -1,0 +1,90 @@
+.pricing_text h3 {
+    color: rgba(55, 81, 126, 255);
+}
+
+.pricing_plan{
+    display: flex;
+}
+
+.plan {
+    box-shadow: 0px 0px 12px -7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 1;
+    border-radius: 7px;
+}
+
+.price h4 {
+    color: rgba(55, 81, 126, 255);
+}
+
+.price .plan_cost {
+    font-size: 40px;
+}
+
+.price span {
+    font-size: 20px;
+}
+
+.price .plan_per_month {
+    color: rgba(115, 197, 234, 255);
+    margin-bottom: 40px;
+}
+
+.pricing_content > div {
+    color: rgba(153,153,153,255);
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.pricing_content .available i {
+    color: rgba(103,193,123,255);
+}
+
+.pricing_content .not_available{
+    color: rgba(206,206,206,255);
+}
+
+.pricing_button a {
+    border: 2px solid rgba(115, 197, 234, 255);
+    text-decoration: none;
+    color: rgba(115, 197, 234, 255);
+}
+
+.pricing_button a:hover {
+    color: white;
+    background-color: rgba(115, 197, 234, 255);
+}
+
+/* --- Business Plan --- */
+.business_plan{
+    border-top: 5px solid  rgba(115, 197, 234, 255);
+}
+
+.business_plan .pricing_button a {
+    background-color: rgba(115, 197, 234, 255);
+    color: white;
+}
+
+.business_plan .pricing_button a:hover {
+    color: rgba(115, 197, 234, 255);
+    background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+
+    .pricing_container{
+        max-width: 620px;
+    }
+
+    .pricing_plan{
+        display: block;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .plan {
+        margin-bottom: 30px;
+    }
+
+}

@@ -1,0 +1,26 @@
+.faq_big_container{
+    background-color: rgba(243,245,250,255);
+}
+
+.faq_text h3{
+    color: rgba(55, 81, 126, 255);
+}
+
+.accBtn_text-faq{
+    color:rgba(55,81,126,255);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+
+    .faq_text h3{
+        width: 50%;
+        margin: auto;
+        padding-bottom: 8px;
+    }
+
+    .faq_container{
+        max-width: 620px;
+    }
+
+}

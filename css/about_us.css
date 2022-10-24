@@ -1,0 +1,69 @@
+.aboutUs_title {
+    color: rgba(55, 81, 126, 255);
+}
+
+.aboutUs_content{
+    display: flex;
+}
+
+.aboutUs_contentLeft{
+    width: 50%;
+}
+
+.aboutUs_contentLeft_point i {
+    color: rgba(121, 199, 235, 255);
+}
+
+.aboutUs_contentRight{
+    width: 50%;
+    margin-left: 23px;
+}
+
+.aboutUs_contentRight_learnMore a{
+    color: rgba(116, 197, 235, 255);
+    width: fit-content;
+    border: 3px solid rgba(116, 197, 235, 255);
+    text-decoration: none;
+}
+
+.aboutUs_contentRight_learnMore a:hover{
+    color: white;
+    background-color:rgba(116, 197, 235, 255);
+
+}
+
+.aboutUs_contentRight_paragraph {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .aboutUs_content{
+        max-width: 620px;
+        display: block;
+    }
+
+    .aboutUs_contentLeft{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .aboutUs_contentRight{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}
+
+/* --- header_bottom_line (For all page) ---*/
+.header_bottom_line_blue{
+    width: 40px;
+    height: 5px;
+    background-color: rgba(71, 178, 228, 255);
+}
+
+.header_bottom_line_grey{
+    width: 40px;
+    height: 2px;
+    background-color: rgb(202, 202, 202);
+}

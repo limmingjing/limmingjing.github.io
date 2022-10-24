@@ -1,0 +1,85 @@
+.contact_text h3{
+    color: rgba(55, 81, 126, 255);
+}
+
+.contact_map_and_form{
+    display: flex;
+}
+
+.contact_map_and_form > div {
+    box-shadow: 0px 0px 12px -7px;
+    border-top: 5px solid  rgba(115, 197, 234, 255);
+    border-bottom: 5px solid rgba(115, 197, 234, 255);
+    border-radius: 7px;
+}
+
+.address_and_map{
+    width: 65%;
+    margin-right: 25px;
+}
+
+.address >div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.address i {
+    color: rgba(72,178,228,255);
+    background-color: rgba(231,245,251,255);
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.address h5 {
+    color: rgba(57,83,128,255);
+    margin-bottom: 1px;
+}
+
+.address span {
+    font-size: 14px;
+    color: rgba(139,163,204,255);
+    font-weight: bold;
+}
+
+#nameANDemail_row div{
+    flex: 1;
+}
+
+.form_sendMessage button{
+    background-color: rgba(115, 197, 234, 255);
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgba(115, 197, 234, 255);
+}
+
+.form_sendMessage button:hover {
+    border: 2px solid rgba(115, 197, 234, 255);
+    color: rgba(115, 197, 234, 255);
+    background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+
+    .contact_container{
+        max-width: 620px;
+    }
+
+    .contact_map_and_form{
+        display: block;
+    }
+
+    .address_and_map{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #nameANDemail_row{
+        display: block;
+    }
+
+    .input_name{
+        margin-bottom: 24px;
+    }
+
+}

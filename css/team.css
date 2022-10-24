@@ -1,0 +1,76 @@
+.team_big_container{
+    background-color: rgba(243,245,250,255);
+}
+
+.team_title h3{
+    color: rgba(55, 81, 126, 255);
+}
+
+.team_nameCard {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.team_person{
+    padding: 30px;
+    box-shadow: 0px 0px 12px -7px ;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.team_person_img{
+    width: 25%;
+}
+
+.team_person_img img{
+    width: 100%;
+}
+
+.team_person_detail{
+    width: 67%;
+}
+
+.team_person_detail p{
+    font-size: 13px;
+}
+
+.team_person_detail h5{
+    color:rgba(61,78,107,255);
+}
+
+.teamPerson_socialMedia_account a{
+    text-decoration: none;
+    color: rgba(61,78,107,255);
+    background-color: rgba(239,242,248,255);
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10.8px;
+    padding-right: 10.8px;
+}
+
+.teamPerson_socialMedia_account a:hover{
+    color: rgba(239,242,248,255);
+    background-color: rgba(61,78,107,255);
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .team_container{
+        max-width: 620px;
+    }
+
+    .team_nameCard {
+        columns: 1;
+    }
+
+    .teamPerson_socialMedia_account a{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 8.8px;
+        padding-right: 8.8px;
+    }
+
+
+}

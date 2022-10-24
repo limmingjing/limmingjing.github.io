@@ -1,0 +1,27 @@
+.copyright_big_container{
+    background-color: rgba(55,81,126,255);
+}
+
+.copyright_container{
+    color: white;
+    font-size: 15px;
+    display: flex;
+}
+
+.copyright_right span{
+    color: rgba(71, 178, 228, 255);
+}
+
+@media screen and (max-width: 992px) {
+
+    .copyright_container{
+        display: block;
+        text-align: center;
+    }
+
+    .copyright_left{
+        justify-content: center;
+    }
+
+    
+}
